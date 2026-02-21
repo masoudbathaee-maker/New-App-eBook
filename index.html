@@ -7,103 +7,38 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2575.7">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #5a5a5a; -webkit-text-stroke: #5a5a5a; background-color: #131313}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #5a5a5a; -webkit-text-stroke: #5a5a5a; background-color: #131313; min-height: 14.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #484848; -webkit-text-stroke: #484848; background-color: #101010}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #484848; -webkit-text-stroke: #484848; background-color: #101010; min-height: 14.0px}
     span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
 <p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
 <p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport"</span></p>
-<p class="p1"><span class="s1">content="width=device-width, initial-scale=1"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;title&gt;NEEP - Ebook Reader&lt;/title&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;link rel="stylesheet" href="style.css"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;New eBook Reader&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="./style.css"&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;header&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;New eBook Reader&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="goHome()"&gt;Home&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="openCategory('elam')"&gt;Elam&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="openCategory('persia')"&gt;Persia&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="openCategory('neareast')"&gt;Near East&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</span></p>
 <p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;main id="content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Welcome! Select a category to start reading.&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;header&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;h1&gt;NEEP&lt;/h1&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;input</span></p>
-<p class="p1"><span class="s1">type="text"</span></p>
-<p class="p1"><span class="s1">id="searchBox"</span></p>
-<p class="p1"><span class="s1">placeholder="Search ebooks..."</span></p>
-<p class="p1"><span class="s1">&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;nav&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;button onclick="goHome()"&gt;Home&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;button onclick="openCategory('elam')"&gt;</span></p>
-<p class="p1"><span class="s1">Elam</span></p>
-<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;button onclick="openCategory('persia')"&gt;</span></p>
-<p class="p1"><span class="s1">Persia</span></p>
-<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;button onclick="openCategory('neareast')"&gt;</span></p>
-<p class="p1"><span class="s1">NearEast</span></p>
-<p class="p1"><span class="s1">&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;main id="content"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;h2&gt;Recommended PDFs&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div id="recommended" class="grid"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;h3&gt;Welcome to NEEP&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;h2&gt;Most Read&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div id="popular" class="grid"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;h3&gt;Select Category Above&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/main&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script src="app.js"&gt;&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- JS فایل باید آخر body لینک شود --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script src="./app.js"&gt;&lt;/script&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
